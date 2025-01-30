@@ -1,0 +1,140 @@
+body {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    background-color: rgb(193, 193, 211);
+
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.container h1 {
+    color: rgb(25, 25, 116);
+    font-weight: bold;
+    font-size: 60px;
+    translate: 0;
+}
+
+.container .input{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 15px;
+}
+.container input {
+    min-width: 60%;
+    margin-right: 0;
+    border: none;
+    border-left: 1px solid;
+    border-bottom: 2px solid rgb(7, 5, 5);
+    background-color: rgba(80, 80, 104, 0.295);
+}
+
+.container input:hover,
+.container input:focus,
+.container input:active,
+.container input:focus-visible{
+    box-shadow: 6px 7px 37px 5px rgb(154 154 167),
+    9px 12px 7px rgb(25 25 116);
+    border: none;
+    border-left: 1px solid;
+    border-bottom: 2px solid rgb(7, 5, 5);
+}
+
+.container button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-size: 1.8em;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.container button:hover span i,
+.container .input:hover i{
+    box-shadow:9px 8px 17px rgb(25 25 116)
+}
+
+.container button:hover span i{
+    background-color: rgb(126, 160, 160);
+}
+
+
+.container .tasks{
+    display: none;
+    margin: 30px 0;
+    height: 50vh;
+    width: 100%;
+    border: none;
+    border-left: 5px  solid rgb(59, 72, 73) ;
+    border-top: 5px  solid rgb(59, 72, 73) ;
+    box-shadow: 10px 15px 5px rgb(154 154 167);
+    border-radius: 5px 15px 5px 20px;
+    /* display: flex; */
+    gap: 10px;
+    padding: 10px 20px;
+    text-align: left;
+    overflow-y: auto;
+}
+
+.container .tasks > div{
+    display: flex;
+}
+.container .tasks .btn {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    border: 2px solid rgb(87, 86, 86);
+    /* margin: 5px 0px; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+.container .tasks div button{
+    font-size: 1em;
+    display: block;
+}
+.container .tasks div button:hover{
+    color: green;
+}
+.container .tasks .card-task{
+    border: 2px solid gray;
+    display: inline-block;
+    padding: 10px 20px;
+    width: 80%;
+    margin: 5px 10px;
+}
+
+
+/* .alert-div{
+    position: relative;
+    top: -151px;
+    left: -25px;
+    background-color: black;
+    width: 69vw;
+    height: 60vh;
+} */
+
+.alert-div{
+    color: green !important;
+    text-align: left;
+    padding-left: 150px;
+    align-items: center;
+}
+
+
